@@ -16,7 +16,17 @@ public class Circle implements Shape{
         this.center = center;
         this.radius = radius;
     }
+    @Override
     public double calculateArea() {
         return radius * radius * 3.14d;
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)return true;
+        if (o == null || this.getClass() != o.getClass()) return false;
+        if (((Circle) o).getCenter().equals(this.getCenter()) && this.getRadius() == ((Circle) o).getRadius()){
+            return true;
+        }
+        return false;
     }
 }
