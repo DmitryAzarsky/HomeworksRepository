@@ -49,4 +49,8 @@ public class Rectangle implements Shape{
         }
         return false;
     }
+    @Override
+    public String getShapeType(){
+        return "Rectangle";
+    }
 }

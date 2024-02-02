@@ -37,4 +37,8 @@ public class Triangle implements Shape{
         double halfPerimeter = (point1.getDistance(point2)+point2.getDistance(point3)+point3.getDistance(point1))/2;
         return Math.sqrt(halfPerimeter*(halfPerimeter-this.point1.getDistance(this.point2))*(halfPerimeter-this.point2.getDistance(this.point3))*(halfPerimeter-this.point1.getDistance(this.point3)));
     }
+    @Override
+    public String getShapeType(){
+        return "Triangle";
+    }
 }

@@ -44,4 +44,8 @@ public class Quad implements Shape{
         }
         return false;
     }
+    @Override
+    public String getShapeType(){
+        return "Quad";
+    }
 }

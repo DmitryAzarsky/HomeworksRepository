@@ -29,4 +29,8 @@ public class Circle implements Shape{
         }
         return false;
     }
+    @Override
+    public String getShapeType(){
+        return "Circle";
+    }
 }
