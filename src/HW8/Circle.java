@@ -33,4 +33,8 @@ public class Circle implements Shape{
     public String getShapeType(){
         return "Circle";
     }
+    @Override
+    public String toString() {
+        return "Circle with radius " + this.getRadius() + " and center in coordinates " + this.getCenter().coordsToString();
+    }
 }

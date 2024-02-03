@@ -33,4 +33,7 @@ public class Point {
         }
         return false;
     }
+    public String coordsToString(){
+        return "(" + this.getX() + "; " + this.getY() + ")";
+    }
 }
