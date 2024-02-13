@@ -1,14 +1,17 @@
-import HW8.Point;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 public class Main {
-    public static void main(String[] args) {
-        List<Integer> l = new ArrayList<>();
-        l.add(1);
-        l.add(56);
-        l.add(37);
-        l.add(5);
+    public static void main(String[] args) throws IOException {
+        byte[] bytes = {127, 30, 50, 70, 99};
+        ByteArrayInputStream bais = new ByteArrayInputStream(bytes);
+        System.out.println(bais.available());
+        while (bais.available() > 0) {
+            byte currentByte = (byte) bais.read();
+            System.out.println(currentByte);
+        }
+
+        bais.close();
     }
 }
+

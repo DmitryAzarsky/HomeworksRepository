@@ -22,7 +22,7 @@ public class MyArrayList<T> {
     }
 
     public T get(int index) {
-        if (index > size || index < 0) {
+        if (index >= size || index < 0) {
             throw new ArrayIndexOutOfBoundsException();
         }
         for (int i = 0; i < size; i++) {
@@ -34,7 +34,7 @@ public class MyArrayList<T> {
     }
 
     public void remove(int index) {
-        if (index > size || index < 0) {
+        if (index >= size || index < 0) {
             throw new ArrayIndexOutOfBoundsException();
         }
         T[] valuesAfterDeletedElement = (T[]) new Object[size - (index + 1)];
