@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Exercise3 {
     public void wordsQuantity() {
-        HashMap<String, Integer> wordsQuantity = new HashMap<>();
+        Map<String, Integer> wordsQuantity = new HashMap<>();
         String wholePhrase = "";
         File wordsFile = new File("./files/words.txt");
         try (FileInputStream fIs = new FileInputStream(wordsFile)){

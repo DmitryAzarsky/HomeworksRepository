@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class SortMap{
-    public LinkedHashMap<String, Integer> sort(HashMap<String, Integer> hashMap){
+    public LinkedHashMap<String, Integer> sort(Map<String, Integer> hashMap){
         LinkedHashMap<String, Integer> sortedMap = new LinkedHashMap<>();
         ArrayList<Integer> valuesList = new ArrayList<>();
         for (int value : hashMap.values()) {
