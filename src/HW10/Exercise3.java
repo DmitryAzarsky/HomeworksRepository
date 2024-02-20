@@ -28,6 +28,7 @@ public class Exercise3 {
                 wordsQuantity.put(currentWord, 1);
             }
         }
+        wordsQuantity = new SortMap().sort(wordsQuantity);
         for (String key: wordsQuantity.keySet()) {
             System.out.println(key + " " + wordsQuantity.get(key));
         }
