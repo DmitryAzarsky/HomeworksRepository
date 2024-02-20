@@ -1,8 +1,6 @@
 package HW10;
 import java.io.*;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 public class Exercise3 {
     public void wordsQuantity() {
         Map<String, Integer> wordsQuantity = new HashMap<>();
@@ -30,11 +28,8 @@ public class Exercise3 {
                 wordsQuantity.put(currentWord, 1);
             }
         }
-        Pattern pattern = Pattern.compile("[a-z0-9]+=[1-9]+");
-        Matcher matcher = pattern.matcher(new SortMap().sort(wordsQuantity).toString());
-        while (matcher.find()) {
-            String keyValue = matcher.group();
-            System.out.println(keyValue.split("=")[0] + " " + keyValue.split("=")[1]);
+        for (String key: wordsQuantity.keySet()) {
+            System.out.println(key + " " + wordsQuantity.get(key));
         }
     }
 }
