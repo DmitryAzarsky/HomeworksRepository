@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import com.google.gson.*;
+//import com.google.gson.*;
 public class Exercise2{
     public void rewriteFromFileToJSONFile() {
         List<Person> persons = new ArrayList<>();
