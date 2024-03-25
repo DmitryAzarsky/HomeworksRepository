@@ -15,5 +15,4 @@ public class Task {
     public boolean isCompleted() {
         return completed;
     }
-
 }

@@ -15,6 +15,18 @@ public class Exercise1 {
         ex1.putData();
         ex1.deletePerson();
         ex1.getAllUsers();
+
+
+
+        String gaysex = "gaysex";
+
+
+
+
+
+
+
+
         ex1.getUserById();
         ex1.getUserByUsername();
     }
